@@ -89,6 +89,3 @@ int main()
 	findavgTime(processes, n, burst_time, quantum); 
 	return 0; 
 } 
-
-    return 0;
-}
