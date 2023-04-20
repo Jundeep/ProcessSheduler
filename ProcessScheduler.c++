@@ -40,7 +40,7 @@ int main() {
     int current_time = 0;
 
     while (!q1.empty() || !q2.empty()) {
-        if (!q1.empty()) { // First-level queue has priority
+        if (!q1.empty()) { 
             Process current_process = q1.front();
             q1.pop();
 
@@ -59,7 +59,7 @@ int main() {
                 q2.push(current_process);
             }
         }
-        else if (!q2.empty()) { // First-level queue is empty, use second-level queue
+        else if (!q2.empty()) { 
             Process current_process = q2.front();
             q2.pop();
 
